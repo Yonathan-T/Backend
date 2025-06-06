@@ -31,8 +31,8 @@ This is a Laravel API backend built with Laravel 12, designed to handle task man
 1. Clone the repository
 
 ```
-git clone <your-repo-url>
-cd <your-repo-folder>
+git clone <https://github.com/Yonathan-T/Backend>
+cd <To-Your-repo-folder>
 ```
 
 2. Install dependencies
@@ -48,20 +48,35 @@ cp .env.example .env
 ```
 
 Edit .env as needed (set DB_CONNECTION, etc.) 4. Generate application key
+
+```
 php artisan key:generate
+```
 
 5. Run database migrations
+
+```
    php artisan migrate
+```
 
 6. (Optional) Seed the database
+
+```
    php artisan db:seed
+```
 
 7. Start the development server
    If using Herd, just run:
+
+```
    herd start
+```
 
 Or with artisan:
+
+```
 php artisan serve
+```
 
 ---
 
