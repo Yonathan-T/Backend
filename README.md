@@ -47,7 +47,9 @@ composer install
 cp .env.example .env
 ```
 
-Edit .env as needed (set DB_CONNECTION, etc.) 4. Generate application key
+Edit .env as needed (set DB_CONNECTION, etc.)
+
+4. Generate application key
 
 ```
 php artisan key:generate
