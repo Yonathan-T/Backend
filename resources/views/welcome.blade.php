@@ -45,7 +45,7 @@
         </section>
 
         <section class="mb-12">
-            <h2 class="text-2xl font-bold mb-4">🧪 API Testing with Postman</h2>
+            <h2 class="text-2xl font-bold mb-4">🧪 API Testing (Because Guessing Is Not a Strategy)</h2>
 
             <h3 class="text-xl font-semibold mb-2">1. Check API is Running</h3>
             <p><strong>Request:</strong> <code>GET https://simple-task-api-88g5.onrender.com/</code></p>
