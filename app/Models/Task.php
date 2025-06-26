@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class Task extends Model
 {
-    //
+
     protected $fillable = ['title', 'completed'];
 
 
