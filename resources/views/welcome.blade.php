@@ -51,7 +51,7 @@
             <p><strong>Request:</strong> <code>GET https://simple-task-api-88g5.onrender.com/</code></p>
             <p><strong>Response:</strong></p>
             <pre
-                class="bg-gray-800 text-white p-4 rounded"><code><h1 style='font-family:sans-serif;'> You're already on the page, which means it's working! No need to test... unless you're the kind of freak who tests even without this guide 👀</h1></code></pre>
+                class="bg-gray-800 text-white p-4 rounded"><code><h1 style='font-family:sans-serif;'> You're already on the page, which means it's working! No need to test this endpoint... unless you're the kind of freak who tests without this guide 👀</h1></code></pre>
 
             <h3 class="text-xl font-semibold mb-2">2. Create a New Task</h3>
             <p><strong>Request:</strong> <code>POST https://simple-task-api-88g5.onrender.com/tasks</code></p>
