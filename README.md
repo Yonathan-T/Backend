@@ -99,14 +99,14 @@ php artisan serve
 
 ### 🧪 API Testing with Postman
 
-**Base URL:** `https://simple-task-api-88g5.onrender.com/api`
+**Base URL:** `https://simple-task-api-88g5.onrender.com/`
 
 **Important:** All task endpoints require a `X-User-ID` header with a valid UUID for user identification.
 
 #### 1. **Check API is Running**
 
 -   **Request:**  
-    `GET https://simple-task-api-88g5.onrender.com/api/`
+    `GET https://simple-task-api-88g5.onrender.com/`
 -   **Response:**
 
 ```
@@ -116,7 +116,7 @@ php artisan serve
 #### 2. **Register a User**
 
 -   **Request:**  
-    `POST https://simple-task-api-88g5.onrender.com/api/register`
+    `POST https://simple-task-api-88g5.onrender.com/register`
 -   **Headers:**
     ```
     X-User-ID: 550e8400-e29b-41d4-a716-446655440000
@@ -138,7 +138,7 @@ php artisan serve
 #### 3. **Create a New Task**
 
 -   **Request:**  
-    `POST https://simple-task-api-88g5.onrender.com/api/task`
+    `POST https://simple-task-api-88g5.onrender.com/task`
 -   **Headers:**
     ```
     X-User-ID: 550e8400-e29b-41d4-a716-446655440000
@@ -168,7 +168,7 @@ php artisan serve
 #### 4. **List All Tasks (User-specific)**
 
 -   **Request:**  
-    `GET https://simple-task-api-88g5.onrender.com/api/tasks`
+    `GET https://simple-task-api-88g5.onrender.com/tasks`
 -   **Headers:**
     ```
     X-User-ID: 550e8400-e29b-41d4-a716-446655440000
@@ -191,13 +191,13 @@ php artisan serve
 #### 5. **Get a Specific Task**
 
 -   **Request:**  
-    `GET https://simple-task-api-88g5.onrender.com/api/task/{id}`
+    `GET https://simple-task-api-88g5.onrender.com/task/{id}`
 -   **Headers:**
     ```
     X-User-ID: 550e8400-e29b-41d4-a716-446655440000
     ```
 -   **Example:**
-    `GET https://simple-task-api-88g5.onrender.com/api/task/1`
+    `GET https://simple-task-api-88g5.onrender.com/task/1`
 -   **Response:**
 
 ```
@@ -214,14 +214,14 @@ php artisan serve
 #### 6. **Mark a Task as Completed**
 
 -   **Request:**
-    `PUT https://simple-task-api-88g5.onrender.com/api/task/{id}`
+    `PUT https://simple-task-api-88g5.onrender.com/task/{id}`
 -   **Headers:**
     ```
     X-User-ID: 550e8400-e29b-41d4-a716-446655440000
     Content-Type: application/json
     ```
 -   **Example:**
-    `PUT https://simple-task-api-88g5.onrender.com/api/task/1`
+    `PUT https://simple-task-api-88g5.onrender.com/task/1`
 -   **Response:**
 
 ```
@@ -238,13 +238,13 @@ php artisan serve
 #### 7. **Delete a Task**
 
 -   **Request:**
-    `DELETE https://simple-task-api-88g5.onrender.com/api/task/{id}`
+    `DELETE https://simple-task-api-88g5.onrender.com/task/{id}`
 -   **Headers:**
     ```
     X-User-ID: 550e8400-e29b-41d4-a716-446655440000
     ```
 -   **Example:**
-    `DELETE https://simple-task-api-88g5.onrender.com/api/task/1`
+    `DELETE https://simple-task-api-88g5.onrender.com/task/1`
 -   **Response:**
 
 ```
@@ -257,15 +257,15 @@ php artisan serve
 
 ### 🔑 API Endpoints Summary
 
-| Method | Endpoint         | Description            | Headers Required |
-| ------ | ---------------- | ---------------------- | ---------------- |
-| GET    | `/api/`          | Check API status       | None             |
-| POST   | `/api/register`  | Register a new user    | `X-User-ID`      |
-| GET    | `/api/tasks`     | Get all tasks for user | `X-User-ID`      |
-| GET    | `/api/task/{id}` | Get specific task      | `X-User-ID`      |
-| POST   | `/api/task`      | Create new task        | `X-User-ID`      |
-| PUT    | `/api/task/{id}` | Mark task as completed | `X-User-ID`      |
-| DELETE | `/api/task/{id}` | Delete task            | `X-User-ID`      |
+| Method | Endpoint     | Description            | Headers Required |
+| ------ | ------------ | ---------------------- | ---------------- |
+| GET    | `/`          | Check API status       | None             |
+| POST   | `/register`  | Register a new user    | `X-User-ID`      |
+| GET    | `/tasks`     | Get all tasks for user | `X-User-ID`      |
+| GET    | `/task/{id}` | Get specific task      | `X-User-ID`      |
+| POST   | `/task`      | Create new task        | `X-User-ID`      |
+| PUT    | `/task/{id}` | Mark task as completed | `X-User-ID`      |
+| DELETE | `/task/{id}` | Delete task            | `X-User-ID`      |
 
 ---
 
