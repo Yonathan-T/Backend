@@ -6,7 +6,7 @@
 
 This is a Laravel API backend built with Laravel 12, designed to handle task management features. It is intended to be used with Laravel Herd for local development.
 
-**🌐 Live Demo:** [https://simple-task-api-88g5.onrender.com/]
+**🌐 Live Demo:** [https://simple-task-api-88g5.onrender.com]
 
 ---
 
@@ -77,6 +77,8 @@ php artisan key:generate
 ```
    herd start
 ```
+
+or use the GUI
 
 Or with artisan:
 
