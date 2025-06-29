@@ -44,7 +44,7 @@
             <p class="text-lg">The API is live and accessible at <a href="https://simple-task-api-88g5.onrender.com"
                     class="text-blue-600 hover:underline">https://simple-task-api-88g5.onrender.com</a>. This page
                 provides a guide to the available endpoints.</p>
-            <p class="text-lg mt-2"><strong>Base URL:</strong> <code>https://simple-task-api-88g5.onrender.com/api</code></p>
+            <p class="text-lg mt-2"><strong>Base URL:</strong> <code>https://simple-task-api-88g5.onrender.com</code></p>
             <p class="text-lg mt-2"><strong>Important:</strong> All task endpoints require a <code>X-User-ID</code> header with a valid UUID for user identification.</p>
         </section>
 
@@ -52,13 +52,13 @@
             <h2 class="text-2xl font-bold mb-4">🧪 API Testing (Because Guessing Is Not a Strategy)</h2>
 
             <h3 class="text-xl font-semibold mb-2">1. Check API is Running</h3>
-            <p><strong>Request:</strong> <code>GET https://simple-task-api-88g5.onrender.com/api/</code></p>
+            <p><strong>Request:</strong> <code>GET https://simple-task-api-88g5.onrender.com/</code></p>
             <p><strong>Response:</strong></p>
             <pre
                 class="bg-gray-800 text-white p-4 rounded"><code><h1 style='font-family:sans-serif;'>✅ API is running</h1></code></pre>
 
             <h3 class="text-xl font-semibold mb-2">2. Register a User</h3>
-            <p><strong>Request:</strong> <code>POST https://simple-task-api-88g5.onrender.com/api/register</code></p>
+            <p><strong>Request:</strong> <code>POST https://simple-task-api-88g5.onrender.com/register</code></p>
             <p><strong>Headers:</strong></p>
             <pre class="bg-gray-800 text-white p-4 rounded"><code>X-User-ID: 550e8400-e29b-41d4-a716-446655440000
 Content-Type: application/json</code></pre>
@@ -73,7 +73,7 @@ Content-Type: application/json</code></pre>
 }</code></pre>
 
             <h3 class="text-xl font-semibold mb-2">3. Create a New Task</h3>
-            <p><strong>Request:</strong> <code>POST https://simple-task-api-88g5.onrender.com/api/task</code></p>
+            <p><strong>Request:</strong> <code>POST https://simple-task-api-88g5.onrender.com/task</code></p>
             <p><strong>Headers:</strong></p>
             <pre class="bg-gray-800 text-white p-4 rounded"><code>X-User-ID: 550e8400-e29b-41d4-a716-446655440000
 Content-Type: application/json</code></pre>
@@ -92,7 +92,7 @@ Content-Type: application/json</code></pre>
 }</code></pre>
 
             <h3 class="text-xl font-semibold mb-2">4. List All Tasks (User-specific)</h3>
-            <p><strong>Request:</strong> <code>GET https://simple-task-api-88g5.onrender.com/api/tasks</code></p>
+            <p><strong>Request:</strong> <code>GET https://simple-task-api-88g5.onrender.com/tasks</code></p>
             <p><strong>Headers:</strong></p>
             <pre class="bg-gray-800 text-white p-4 rounded"><code>X-User-ID: 550e8400-e29b-41d4-a716-446655440000</code></pre>
             <p><strong>Response:</strong></p>
@@ -108,10 +108,10 @@ Content-Type: application/json</code></pre>
 ]</code></pre>
 
             <h3 class="text-xl font-semibold mb-2">5. Get a Specific Task</h3>
-            <p><strong>Request:</strong> <code>GET https://simple-task-api-88g5.onrender.com/api/task/{id}</code></p>
+            <p><strong>Request:</strong> <code>GET https://simple-task-api-88g5.onrender.com/task/{id}</code></p>
             <p><strong>Headers:</strong></p>
             <pre class="bg-gray-800 text-white p-4 rounded"><code>X-User-ID: 550e8400-e29b-41d4-a716-446655440000</code></pre>
-            <p><strong>Example:</strong> <code>GET https://simple-task-api-88g5.onrender.com/api/task/1</code></p>
+            <p><strong>Example:</strong> <code>GET https://simple-task-api-88g5.onrender.com/task/1</code></p>
             <p><strong>Response:</strong></p>
             <pre class="bg-gray-800 text-white p-4 rounded"><code>{
   "id": 1,
@@ -123,11 +123,11 @@ Content-Type: application/json</code></pre>
 }</code></pre>
 
             <h3 class="text-xl font-semibold mb-2">6. Mark a Task as Completed</h3>
-            <p><strong>Request:</strong> <code>PUT https://simple-task-api-88g5.onrender.com/api/task/{id}</code></p>
+            <p><strong>Request:</strong> <code>PUT https://simple-task-api-88g5.onrender.com/task/{id}</code></p>
             <p><strong>Headers:</strong></p>
             <pre class="bg-gray-800 text-white p-4 rounded"><code>X-User-ID: 550e8400-e29b-41d4-a716-446655440000
 Content-Type: application/json</code></pre>
-            <p><strong>Example:</strong> <code>PUT https://simple-task-api-88g5.onrender.com/api/task/1</code></p>
+            <p><strong>Example:</strong> <code>PUT https://simple-task-api-88g5.onrender.com/task/1</code></p>
             <p><strong>Response:</strong></p>
             <pre class="bg-gray-800 text-white p-4 rounded"><code>{
   "id": 1,
@@ -139,10 +139,10 @@ Content-Type: application/json</code></pre>
 }</code></pre>
 
             <h3 class="text-xl font-semibold mb-2">7. Delete a Task</h3>
-            <p><strong>Request:</strong> <code>DELETE https://simple-task-api-88g5.onrender.com/api/task/{id}</code></p>
+            <p><strong>Request:</strong> <code>DELETE https://simple-task-api-88g5.onrender.com/task/{id}</code></p>
             <p><strong>Headers:</strong></p>
             <pre class="bg-gray-800 text-white p-4 rounded"><code>X-User-ID: 550e8400-e29b-41d4-a716-446655440000</code></pre>
-            <p><strong>Example:</strong> <code>DELETE https://simple-task-api-88g5.onrender.com/api/task/1</code></p>
+            <p><strong>Example:</strong> <code>DELETE https://simple-task-api-88g5.onrender.com/task/1</code></p>
             <p><strong>Response:</strong></p>
             <pre class="bg-gray-800 text-white p-4 rounded"><code>{
   "message": "Task deleted"
@@ -164,43 +164,43 @@ Content-Type: application/json</code></pre>
                     <tbody class="bg-white divide-y divide-gray-200">
                         <tr>
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">GET</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>/api/</code></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>/</code></td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Check API status</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">None</td>
                         </tr>
                         <tr>
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">POST</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>/api/register</code></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>/register</code></td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Register a new user</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>X-User-ID</code></td>
                         </tr>
                         <tr>
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">GET</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>/api/tasks</code></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>/tasks</code></td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Get all tasks for user</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>X-User-ID</code></td>
                         </tr>
                         <tr>
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">GET</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>/api/task/{id}</code></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>/task/{id}</code></td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Get specific task</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>X-User-ID</code></td>
                         </tr>
                         <tr>
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">POST</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>/api/task</code></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>/task</code></td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Create new task</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>X-User-ID</code></td>
                         </tr>
                         <tr>
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">PUT</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>/api/task/{id}</code></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>/task/{id}</code></td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Mark task as completed</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>X-User-ID</code></td>
                         </tr>
                         <tr>
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">DELETE</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>/api/task/{id}</code></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>/task/{id}</code></td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Delete task</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><code>X-User-ID</code></td>
                         </tr>
